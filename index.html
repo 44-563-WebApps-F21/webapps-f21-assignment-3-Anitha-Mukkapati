@@ -6,7 +6,6 @@
     <body>
         <h1>Anitha Mukkapati</h1>
         <p>Sravya is my best friend.We both like rock and roll.</p>
-    </body>
     <h6>My Favorite place in the world is Maldives</h6>
     <p>The Maldives, a collection of more than a thousand islands in the <b>Indian Ocean</b> , is known for its clear emerald waters, 
         beautiful beaches that stretch as far as the eye can see, and of course <b>luxurious overwater bungalows</b>.
@@ -36,7 +35,6 @@
   </ul>
 
   <a href= AboutMe.html>Link for AboutMe</a>
-</html>
 <hr>
 <h4>Heading about creating a table food/drinks</h4>
 Introduction:
@@ -79,3 +77,34 @@ Introduction:
         <td>20-10</td>
     </tr>
 </table>
+<hr>
+<h4>code fencing</h4>
+<h5>Fibonacci Sequence</h5>
+<blockquote>The Fibonacci Sequence is the series of numbers:
+
+    0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+    
+    The next number is found by adding up the two numbers before it:
+    
+    the 2 is found by adding the two numbers before it (1+1),
+    the 3 is found by adding the two numbers before it (1+2),
+    the 5 is (2+3),
+    and so on!
+</blockquote>
+<a href=https://www.mathsisfun.com/numbers/fibonacci-sequence.html> link for Fibonacci Sequence Algorithm</a>
+<pre>
+    pair<int, int> fib (int n) {
+        if (n == 0)
+            return {0, 1};
+    
+        auto p = fib(n >> 1);
+        int c = p.first * (2 * p.second - p.first);
+        int d = p.first * p.first + p.second * p.second;
+        if (n & 1)
+            return {d, c + d};
+        else
+            return {c, d};
+    }
+</pre>
+</body>
+</html>
